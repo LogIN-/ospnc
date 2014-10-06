@@ -2,24 +2,24 @@
 * @Author: login
 * @Date:   2014-10-05 12:59:05
 * @Last Modified by:   login
-* @Last Modified time: 2014-10-06 13:29:07
+* @Last Modified time: 2014-10-06 14:43:25
 */
 
 body {
-    background-color: #f2f4f6;
+    background-color: #00a8ec;
     font-family: "Open Sans", sans-serif;
     text-align: center;
 }
 header > h1 {
-    background-image: url("http://placehold.it/385x81");
+    color: white;
+    font-weight: bold;
     height: 81px;
-    margin: 50px auto;
-    text-indent: -9999px;
+    margin: 75px auto 0;
     white-space: nowrap;
-    width: 385px;
+    width: auto;
 }
 header > h2 {
-    color: #a9b2bc;
+    color: #373535;
     display: block;
     font-size: 20px;
     font-weight: 300;
@@ -39,40 +39,58 @@ header > input:after {
     width: 700px;
 }
 header > input {
-    outline: 1px dashed #c7ccd1;
+    outline: 1px dashed #FFFFFF;
     border: 0 none;
-    color: #c7ccd1;
+    color: #373535;
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 28px;
     margin-top: 30px;
     position: relative;
     text-align: center;
     text-transform: none;
+    background-color: #ffffff;
 }
 
 input:focus {
     transition: outline 0.5s 0.5s ease; 
-    outline: 5px dashed #c7ccd1;
+    outline: 5px dashed #FFFFFF;
 }
 
 
 .results_body {
-    background-color: rgba(255, 255, 255, 0.698);
+    background-color: #fff;
     border-radius: 5px;
     margin: 50px auto 0;
     width: 80%;
 }
+
+.res-title {
+    font-size: 18px;
+    height: 45px !important;
+    line-height: 45px;
+}
+.res-title-head {
+    float: left;
+    width: auto;
+}
+.res-title-query {
+    float: left;
+    font-weight: bold;
+    padding-left: 10px;
+    width: auto;
+}
+
 .res-item {    
     height: 35px;
     vertical-align: middle;
 }
 .res-item:not(:last-child) {
-    border-bottom: 1px solid gold;
+    border-bottom: 1px solid #00a8ec;
 }
 .res-item .col-md-4 {
     height: 100%;
     line-height: 35px;
-    border-right: 1px dashed black;
+    border-right: 2px dashed #00A8EC;
 }
 .res-item .col-md-8 {
     height: 100%;
@@ -86,12 +104,27 @@ input:focus {
 }
 .res-item .col-md-8 i {
     font-size: 25px;
+    line-height: 35px;
 }
 .res-item .col-md-8 i.fa-smile-o {
-    color: blue;
+    color: #00A8EC;
     
 }
 .res-item .col-md-8 i.fa-meh-o {
-    color: red;
+    color: #20242a;
     
 }
+
+
+footer {
+    bottom: 0;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    color: white;
+}
+footer a, footer a:hover, footer a:active {
+    color: white;
+    text-decoration: none;
+}
+

@@ -1,5 +1,5 @@
 ## Introduction
-`OpenSource Project Name Checker` from now on: `OSPMC` is a simple web-service that checks if your new
+`OpenSource Project Name Checker` from now on: `OSPNC` is a simple web-service that checks if your new
 project name is already taken on some of most popular open-source communities.
 
 ## Get started
@@ -9,10 +9,10 @@ or you can clone this repo install deps and start service on your own domain
 
 ## Support and Bugs
 If you are having trouble, have found a bug, or want to contribute don't be shy.
-[Open a ticket](https://github.com/LogIN-/open-source-name-checker/issues) on GitHub.
+[Open a ticket](https://github.com/LogIN-/ospnc/issues) on GitHub.
 
 ## License
-`OSPMC` source-code uses the The MIT License (MIT), see our `LICENSE` file.
+`OSPNC` source-code uses the The MIT License (MIT), see our `LICENSE` file.
 ```
 The MIT License (MIT)
 Copyright (c) LogIN- 2014

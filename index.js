@@ -33,7 +33,7 @@ server.io.sockets.on('connection', function (socket) {
     socket.on("register", function(data) {
         // Create new Client
         var clientId = data.guid;
-        
+
         config.clients[clientId] = {};
         config.clients[clientId].socket = socket;
         config.clients[clientId].requests_count = 0;
@@ -58,7 +58,7 @@ server.io.sockets.on('connection', function (socket) {
         
         /* Check for availability */    
         new ospnc.NameChecker({}, clientSearch, function(response) {     
-            config.clients[clientId].socket.emit('console_output', { data: response, guid:  clientId});
+            config.clients[clientId].socket.emit('console_output', { data: response, guid:  clientId, clientSearch: clientSearch});
         });
 
     });
