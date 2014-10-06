@@ -2,7 +2,7 @@
 * @Author: login
 * @Date:   2014-10-05 12:59:05
 * @Last Modified by:   login
-* @Last Modified time: 2014-10-06 14:43:25
+* @Last Modified time: 2014-10-06 14:59:51
 */
 
 body {
@@ -25,30 +25,18 @@ header > h2 {
     font-weight: 300;
     line-height: 25px;
     text-align: center;
-    text-transform: uppercase;
-}
-header > input:after {
-    background-color: #e2e5e8;
-    border-radius: 2px;
-    content: "";
-    height: 4px;
-    left: 50%;
-    margin-left: -350px;
-    margin-top: -50px;
-    position: absolute;
-    width: 700px;
 }
 header > input {
-    outline: 1px dashed #FFFFFF;
+    background-color: #ffffff;
     border: 0 none;
     color: #373535;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Open Sans Condensed",sans-serif;
     font-size: 28px;
     margin-top: 30px;
+    outline: 1px dashed #ffffff;
     position: relative;
     text-align: center;
-    text-transform: none;
-    background-color: #ffffff;
+    width: 100%;
 }
 
 input:focus {
@@ -96,6 +84,7 @@ input:focus {
     height: 100%;
     line-height: 35px;
     text-align: center;
+    cursor: default;
 }
 
 
