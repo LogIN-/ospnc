@@ -1,0 +1,38 @@
+{
+  "name": "open-source-name-checker",
+  "version": "1.0.0",
+  "description": "Check if name of your open-source project already exist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=0.4.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:LogIN-/open-source-name-checker.git"
+  },
+  "keywords": [
+    "project",
+    "name",
+    "check"
+  ],
+  "author": "LogIN- <info@ivantomic.com> (https://github.com/LogIN-)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LogIN-/datagram/issues"
+  },
+  "homepage": "https://github.com/LogIN-/open-source-name-checker",
+  "dependencies": {
+    "express": "^4.9.5",
+    "socket.io": "^1.1.0",
+    "underscore": "^1.7.0"
+  },
+  "maintainers": [
+    {
+      "name": "Ivan Tomic",
+      "email": "info@ivantomic.com"
+    }
+  ]
+}

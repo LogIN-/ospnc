@@ -1,0 +1,97 @@
+/* 
+* @Author: login
+* @Date:   2014-10-05 12:59:05
+* @Last Modified by:   login
+* @Last Modified time: 2014-10-06 13:29:07
+*/
+
+body {
+    background-color: #f2f4f6;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+header > h1 {
+    background-image: url("http://placehold.it/385x81");
+    height: 81px;
+    margin: 50px auto;
+    text-indent: -9999px;
+    white-space: nowrap;
+    width: 385px;
+}
+header > h2 {
+    color: #a9b2bc;
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+header > input:after {
+    background-color: #e2e5e8;
+    border-radius: 2px;
+    content: "";
+    height: 4px;
+    left: 50%;
+    margin-left: -350px;
+    margin-top: -50px;
+    position: absolute;
+    width: 700px;
+}
+header > input {
+    outline: 1px dashed #c7ccd1;
+    border: 0 none;
+    color: #c7ccd1;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 28px;
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+}
+
+input:focus {
+    transition: outline 0.5s 0.5s ease; 
+    outline: 5px dashed #c7ccd1;
+}
+
+
+.results_body {
+    background-color: rgba(255, 255, 255, 0.698);
+    border-radius: 5px;
+    margin: 50px auto 0;
+    width: 80%;
+}
+.res-item {    
+    height: 35px;
+    vertical-align: middle;
+}
+.res-item:not(:last-child) {
+    border-bottom: 1px solid gold;
+}
+.res-item .col-md-4 {
+    height: 100%;
+    line-height: 35px;
+    border-right: 1px dashed black;
+}
+.res-item .col-md-8 {
+    height: 100%;
+    line-height: 35px;
+    text-align: center;
+}
+
+
+.res-item .col-md-4 > span {
+    font-size: 18px;
+}
+.res-item .col-md-8 i {
+    font-size: 25px;
+}
+.res-item .col-md-8 i.fa-smile-o {
+    color: blue;
+    
+}
+.res-item .col-md-8 i.fa-meh-o {
+    color: red;
+    
+}
