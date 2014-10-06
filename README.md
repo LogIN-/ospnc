@@ -3,7 +3,7 @@
 project name is already taken on some of most popular open-source communities.
 
 ## Get started
-You can just visit this page: [ospmc](http://ivantomic.com/projects/ospmc/)
+You can just visit this page: [ospmc](http://ivantomic.com/projects/ospnc/)
 or you can clone this repo install deps and start service on your own domain
 
 
