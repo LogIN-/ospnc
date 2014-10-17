@@ -77,9 +77,9 @@ ospnc.addResult = function(name, htmlClass) {
     var resId = 'item-' + name.toLowerCase();    
 
     var resTemplate = '<div id="' + resId + '" class="res-item col-sm-12 animated lightSpeedIn">' +
-        '    <div class="col-md-4"><span>' + name + '</span></div>' +
-        '    <div class="col-md-8"><i class="fa ' + htmlClass + '"></i></div>' +
-        '</div>';
+                      '    <div class="col-md-4"><span>' + name + '</span></div>' +
+                      '    <div class="col-md-8"><i class="fa ' + htmlClass + '"></i></div>' +
+                      '</div>';
     resContainer.append(resTemplate);
 };
 
@@ -116,4 +116,7 @@ $(document).ready(function() {
     });
     ospnc.registerUser();
     ospnc.setupSocketEvents();
+
+    // Slide out left menu
+    $("#legend").css('left', '-248px');
 });

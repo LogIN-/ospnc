@@ -2,7 +2,7 @@
 * @Author: login
 * @Date:   2014-10-05 12:59:05
 * @Last Modified by:   login
-* @Last Modified time: 2014-10-06 14:59:51
+* @Last Modified time: 2014-10-17 23:50:12
 */
 
 body {
@@ -30,7 +30,7 @@ header > input {
     background-color: #ffffff;
     border: 0 none;
     color: #373535;
-    font-family: "Open Sans Condensed",sans-serif;
+    font-family: "Open Sans Condensed", sans-serif;
     font-size: 28px;
     margin-top: 30px;
     outline: 1px dashed #ffffff;
@@ -38,20 +38,16 @@ header > input {
     text-align: center;
     width: 100%;
 }
-
 input:focus {
-    transition: outline 0.5s 0.5s ease; 
+    transition: outline 0.5s 0.5s ease;
     outline: 5px dashed #FFFFFF;
 }
-
-
 .results_body {
     background-color: #fff;
     border-radius: 5px;
     margin: 50px auto 0;
     width: 80%;
 }
-
 .res-title {
     font-size: 18px;
     height: 45px !important;
@@ -67,8 +63,7 @@ input:focus {
     padding-left: 10px;
     width: auto;
 }
-
-.res-item {    
+.res-item {
     height: 35px;
     vertical-align: middle;
 }
@@ -86,8 +81,6 @@ input:focus {
     text-align: center;
     cursor: default;
 }
-
-
 .res-item .col-md-4 > span {
     font-size: 18px;
 }
@@ -97,14 +90,10 @@ input:focus {
 }
 .res-item .col-md-8 i.fa-smile-o {
     color: #00A8EC;
-    
 }
 .res-item .col-md-8 i.fa-meh-o {
     color: #20242a;
-    
 }
-
-
 footer {
     bottom: 0;
     margin: 0 auto;
@@ -116,4 +105,121 @@ footer a, footer a:hover, footer a:active {
     color: white;
     text-decoration: none;
 }
+#legend {
+    background-color: #ffffff;
+    border-right: 2px dashed #00a8ec;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    min-height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px;
+    -moz-transition: left 1s ease 0s;
+    -o-transition: left 1s ease 0s;
+    -webkit-transition: left 1s ease 0s;
+    -ms-transition: left 1s ease 0s;
+    transition: left 1s ease 0s;
+}
+#legend:hover, #legend:focus {
+    left: 0 !important;
+}
+#legend:hover .navigation-button, #legend:focus .navigation-button {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+#legend ul.legend {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#legend ul.legend li {
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 15px;
+    text-align: left;
+    width: 100%;
 
+    -moz-transition: all 500ms ease 0s;
+    -o-transition: all 500ms ease 0s;
+    -webkit-transition: all 500ms ease 0s;
+    -ms-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+}
+.legend li i.fa {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 35px;
+}
+#legend ul.legend li:active, #legend ul.legend li:hover {
+    background-color: #00a8ec;
+    color: #FFFFFF;
+    cursor: default;
+    padding-left: 35px;
+
+}
+.legend-title {
+    float: left;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 25px;
+    min-width: 100%;
+    padding-left: 15px;
+    text-align: left;
+}
+/* MENU ICON ON LEFT NAVIGATION BAR */
+
+.navigation-button {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+    border-color: #00a8ec #00a8ec #00a8ec -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid solid none;
+    border-top-right-radius: 5px;
+    border-width: 1px 1px 1px 0;
+    bottom: 49%;
+    display: block;
+    height: 75px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: .5;
+    position: absolute;
+    right: -43px;
+    -moz-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+}
+.navigation-button > li {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+.navigation-button li a {
+    border: 0 none;
+    color: #00a8ec;
+    cursor: default;
+    font-size: 14px;
+    font-weight: bold;
+    height: 100%;
+    left: -25px;
+    position: absolute;
+    text-decoration: none;
+    top: -5px;
+    transform: rotate(90deg);
+    width: 100% !important;
+}
+.navigation-button:hover, .navigation-button:focus {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
