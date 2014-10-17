@@ -72,13 +72,13 @@ ospnc.showAlertWindow = function() {
             ospnc.resetSearchInput();
         });
 };
-ospnc.addResult = function(name, hrmlClass) {
+ospnc.addResult = function(name, htmlClass) {
     var resContainer = $("section.container div.results_body");
     var resId = 'item-' + name.toLowerCase();    
 
     var resTemplate = '<div id="' + resId + '" class="res-item col-sm-12 animated lightSpeedIn">' +
         '    <div class="col-md-4"><span>' + name + '</span></div>' +
-        '    <div class="col-md-8"><i class="fa ' + hrmlClass + '"></i></div>' +
+        '    <div class="col-md-8"><i class="fa ' + htmlClass + '"></i></div>' +
         '</div>';
     resContainer.append(resTemplate);
 };
@@ -100,7 +100,7 @@ $(document).ready(function() {
             var searchObj = {
                 searchValue: inputSearch.val()
             };
-            if (searchObj.searchValue.length <= 3) {
+            if (searchObj.searchValue.length < 3) {
                 ospnc.showAlertWindow();
             } else {
                 ospnc.resetSearchDisplay();
