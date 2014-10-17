@@ -38,11 +38,13 @@ ospnc.setupSocketEvents = function() {
         var resName = resJson.name;
         var resIcon;
 
-        if(resJson.status == 'available'){
+        if(resJson.status === 'available'){
             resIcon = 'fa-smile-o';
-        }else{
+        }else if(resJson.status === 'unavailable'){
             resIcon = 'fa-meh-o';
-        }  
+        }else{
+            resIcon = 'fa-warning';
+        }
         if(!$('.res-title').length){
             var resContainer = $("section.container div.results_body");
             resContainer.append('<div class="res-item res-title col-sm-12 animated flipInX"><div class="res-title res-title-head">Results for:</div> <div class="res-title res-title-query">'+ data.clientSearch +'</div></div>');
