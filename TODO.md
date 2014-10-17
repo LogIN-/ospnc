@@ -3,10 +3,10 @@
     - pypi
     - Composer for PHP
     - Debian package repository
-    - CodePlex
-    - googlecode
-    - CPAN
-    - Rubygems
+    - CodePlex*
+    - googlecode*
+    - CPAN*
+    - Rubygems*
     - Bower
 
 * Revisit code and clean it
