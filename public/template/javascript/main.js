@@ -35,21 +35,26 @@ ospnc.setupSocketEvents = function() {
 
     socket.on('console_output', function(data) {     
         var resJson = data.data;        
-        var resName = resJson.name;
-        var resIcon;
+        var resHuman = {
+            icon: null,
+            title: null
+        }
 
         if(resJson.status === 'available'){
-            resIcon = 'fa-smile-o';
+            resHuman.icon = 'fa-smile-o';
+            resHuman.title = 'Name is available!';
         }else if(resJson.status === 'unavailable'){
-            resIcon = 'fa-meh-o';
+            resHuman.icon = 'fa-meh-o';
+            resHuman.title = 'Name is unavailable!';
         }else{
-            resIcon = 'fa-warning';
+            resHuman.icon = 'fa-warning';
+            resHuman.title = 'Check failed!';
         }
         if(!$('.res-title').length){
             var resContainer = $("section.container div.results_body");
             resContainer.append('<div class="res-item res-title col-sm-12 animated flipInX"><div class="res-title res-title-head">Results for:</div> <div class="res-title res-title-query">'+ data.clientSearch +'</div></div>');
         }
-        ospnc.addResult(resName, resIcon);     
+        ospnc.addResult(resJson, resHuman);     
 
     }); 
 };
@@ -74,13 +79,13 @@ ospnc.showAlertWindow = function() {
             ospnc.resetSearchInput();
         });
 };
-ospnc.addResult = function(name, htmlClass) {
+ospnc.addResult = function(data, resHuman) {
     var resContainer = $("section.container div.results_body");
-    var resId = 'item-' + name.toLowerCase();    
+    var resId = 'item-' + data.name.toLowerCase();    
 
-    var resTemplate = '<div id="' + resId + '" class="res-item col-sm-12 animated lightSpeedIn">' +
-                      '    <div class="col-md-4"><span>' + name + '</span></div>' +
-                      '    <div class="col-md-8"><i class="fa ' + htmlClass + '"></i></div>' +
+    var resTemplate = '<div title="' + resHuman.title + '" id="' + resId + '" class="res-item col-sm-12 animated lightSpeedIn">' +
+                      '    <div class="col-md-4"><span>' + data.name + '</span></div>' +
+                      '    <div class="col-md-8"><i class="fa ' + resHuman.icon + '"></i><a target="_blank" title="Visit URL on checked page" href="' + data.headers.reqHost + data.headers.reqPath + '">^</a></div>' +
                       '</div>';
     resContainer.append(resTemplate);
 };

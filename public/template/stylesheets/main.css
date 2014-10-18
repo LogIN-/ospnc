@@ -2,7 +2,7 @@
 * @Author: login
 * @Date:   2014-10-05 12:59:05
 * @Last Modified by:   login
-* @Last Modified time: 2014-10-18 11:14:54
+* @Last Modified time: 2014-10-18 12:20:54
 */
 
 body {
@@ -66,6 +66,7 @@ input:focus {
 .res-item {
     height: 35px;
     vertical-align: middle;
+    cursor: default;
 }
 .res-item:not(:last-child) {
     border-bottom: 1px solid #00a8ec;
@@ -94,6 +95,28 @@ input:focus {
 .res-item .col-md-8 i.fa-meh-o {
     color: #20242a;
 }
+/* Visit link ^ */
+.res-item .col-md-8 a {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    height: 100%;
+    position: absolute;
+    top: -10px;
+    width: 15px;
+    outline: none;
+
+    -moz-transition: all 500ms ease 0s;
+    -o-transition: all 500ms ease 0s;
+    -webkit-transition: all 500ms ease 0s;
+    -ms-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+
+}
+.res-item .col-md-8 a:hover, .res-item .col-md-8 a:active {
+  font-size: 18px;
+  text-decoration: none;
+}
 footer {
     bottom: 0;
     margin: 0 auto;
@@ -116,6 +139,7 @@ footer a, footer a:hover, footer a:active {
     right: 0;
     top: 0;
     width: 250px;
+
     -moz-transition: left 1s ease 0s;
     -o-transition: left 1s ease 0s;
     -webkit-transition: left 1s ease 0s;
@@ -150,6 +174,9 @@ footer a, footer a:hover, footer a:active {
     -ms-transition: all 500ms ease 0s;
     transition: all 500ms ease 0s;
 }
+#legend ul.legend li:not(:last-child){
+    border-bottom: 1px solid silver;
+}
 .legend li i.fa {
     font-size: 24px;
     font-weight: bold;
@@ -170,6 +197,7 @@ footer a, footer a:hover, footer a:active {
     min-width: 100%;
     padding-left: 15px;
     text-align: left;
+    font-weight: bold;
 }
 /* MENU ICON ON LEFT NAVIGATION BAR */
 
@@ -188,11 +216,14 @@ footer a, footer a:hover, footer a:active {
     bottom: 49%;
     display: block;
     height: 95px;
+
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     filter: alpha(opacity=50);
     opacity: .5;
+
     position: absolute;
     right: -43px;
+
     -moz-transition: all 1s ease 0s;
     -o-transition: all 1s ease 0s;
     -webkit-transition: all 1s ease 0s;
@@ -215,7 +246,11 @@ footer a, footer a:hover, footer a:active {
     position: absolute;
     text-decoration: none;
     top: -9px;
+
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
+
     width: 100% !important;
 }
 .navigation-button:hover, .navigation-button:focus {
