@@ -2,7 +2,7 @@
 * @Author: login
 * @Date:   2014-10-05 12:59:05
 * @Last Modified by:   login
-* @Last Modified time: 2014-10-17 23:50:12
+* @Last Modified time: 2014-10-18 11:14:54
 */
 
 body {
@@ -187,7 +187,7 @@ footer a, footer a:hover, footer a:active {
     border-width: 1px 1px 1px 0;
     bottom: 49%;
     display: block;
-    height: 75px;
+    height: 95px;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     filter: alpha(opacity=50);
     opacity: .5;
@@ -211,10 +211,10 @@ footer a, footer a:hover, footer a:active {
     font-size: 14px;
     font-weight: bold;
     height: 100%;
-    left: -25px;
+    left: -35px;
     position: absolute;
     text-decoration: none;
-    top: -5px;
+    top: -9px;
     transform: rotate(90deg);
     width: 100% !important;
 }
