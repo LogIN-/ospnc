@@ -1,9 +1,9 @@
 ## Introduction
-`OpenSource Project Name Checker` from now on: `OSPNC` is a simple web-service that checks if your new
+`Open Source Project Name Checker` from now on: `OSPNC` is a simple web-service that checks if your new
 project name is already taken on some of most popular open-source communities.
 
 ## Get started
-You can just visit this page: [ospmc](http://ivantomic.com/projects/ospnc/)
+You can just visit this page: [ospnc](http://ivantomic.com/projects/ospnc/)
 or you can clone this repo install deps and start service on your own domain
 
 
