@@ -2,30 +2,65 @@
 * @Author: login
 * @Date:   2014-10-05 12:59:05
 * @Last Modified by:   login
-* @Last Modified time: 2014-10-20 01:25:29
+* @Last Modified time: 2014-10-20 10:22:15
 */
+
+/*
+ *   Small CSS reset style
+ */
 * {
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 html, body {
+    height: 100%;
     margin: 0;
+    min-height: 100%;
+    overflow: hidden;
     padding: 0;
 }
-
 body {
     background-color: #00a8ec;
     font-family: "Open Sans", sans-serif;
     text-align: center;
     color: #262626;
 }
-a {
+/*
+ *   Our left "Legend" "Results" "Bottom" and "git fork" a links
+ */
+.navigation-button li a, .res-item .col-md-8 a, footer a, .github-fork a {
     color: #428bca;
     text-decoration: none;
-    background: none repeat scroll 0 0 transparent;
+    /* Fallback for web browsers that doesn't support RGBa */
+    
+    background: rgb(255, 255, 255) transparent;
+    /* RGBa with 0.6 opacity */
+    
+    background: rgba(255, 255, 255, 0);
+    /* For IE 5.5 - 7*/
+    
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#FFFFFF);
+    /* For IE 8*/
+    
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#FFFFFF)";
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+.github-fork img {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    border: 0; 
+    width: 149px; 
+    height: 149px;
+}
+/*
+ *   Display for our blocks
+ */
+footer, header, section {
     display: block;
 }
+/*
+ *   HEADER styles
+ */
 header > h1 {
     color: white;
     font-weight: bold;
@@ -44,6 +79,8 @@ header > h2 {
     line-height: 25px;
     text-align: center;
     line-height: 1.1;
+
+    margin: 0 auto;
 }
 header > input {
     background-color: #ffffff;
@@ -57,12 +94,99 @@ header > input {
     text-align: center;
     width: 100%;
     line-height: inherit;
-}
-input:focus {
+
+    -webkit-transition: outline 0.5s 0.5s ease;
+    -moz-transition: outline 0.5s 0.5s ease;
+    -o-transition: outline 0.5s 0.5s ease;
     transition: outline 0.5s 0.5s ease;
+}
+
+/*
+ *  Responsive design
+ */
+@media only screen and (min-device-width : 768px) {
+    header > h1 {
+        font-size: 36px;
+    }
+    header > input {
+        font-size: 28px;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    header > h1 {
+        font-size: 26px;
+        text-overflow: ellipsis;
+        white-space: pre-wrap;
+        width: 85%;
+    }
+    header > h2 {
+        font-size: 16px;
+        text-overflow: ellipsis;
+        white-space: pre-wrap;
+        width: 85%;
+    }
+    header > input {
+        font-size: 24px;
+    }
+    .github-fork img {
+        width: 100px;
+        height: 100px;
+    }
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+    .col-md-4 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre-wrap;
+    }
+    .navigation-button {
+        bottom: 0 !important;
+    }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+
+    header > h1 {
+        font-size: 18px;
+        text-overflow: ellipsis;
+        white-space: pre-wrap;
+        width: 85%;
+    }
+    header > h2 {
+        font-size: 14px;
+        text-overflow: ellipsis;
+        white-space: pre-wrap;
+        width: 85%;
+    }
+    header > input {
+        font-size: 16px;
+    }
+    .github-fork img {
+        width: 100px;
+        height: 100px;
+    }
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+    .col-md-4 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: pre-wrap;
+    }
+    .navigation-button {
+        bottom: 0 !important;
+    }
+}
+
+header > input:focus {
     outline: 5px dashed #FFFFFF;
 }
-.container {
+
+section.container {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -71,16 +195,14 @@ input:focus {
 }
 .container {
     width: 1170px;
+    margin: 0 auto;
 }
-
 .col-sm-12 {
     width: 100%;
 }
-.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+.col-sm-12 {
     float: left;
-}
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
@@ -92,39 +214,45 @@ input:focus {
 .col-md-8 {
     width: 66.6667%;
 }
-.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+.col-md-4, .col-md-8 {
     float: left;
 }
-
-
-.results_body {
+.container .results_body {
     background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     margin: 50px auto 0;
     width: 80%;
     display: table;
     clear: both;
 }
-.res-title {
+.results_body .res-title {
     font-size: 18px;
     height: 45px !important;
     line-height: 45px;
 }
-.res-title-head {
+.results_body .res-item {
+    height: 35px;
+    vertical-align: middle;
+    cursor: default;
+}
+/*
+ *   Results head title
+ */
+.res-item .res-title-head {
     float: left;
     width: auto;
 }
-.res-title-query {
+.res-item .res-title-query {
     float: left;
     font-weight: bold;
     padding-left: 10px;
     width: auto;
 }
-.res-item {
-    height: 35px;
-    vertical-align: middle;
-    cursor: default;
-}
+/*
+ *   Results items
+ */
 .res-item:not(:last-child) {
     border-bottom: 1px solid #00a8ec;
 }
@@ -152,7 +280,9 @@ input:focus {
 .res-item .col-md-8 i.fa-meh-o {
     color: #20242a;
 }
-/* Visit link ^ */
+/*
+ *   Results items Visit link ^
+ */
 .res-item .col-md-8 a {
     display: inline-block;
     font-size: 10px;
@@ -163,28 +293,33 @@ input:focus {
     width: 15px;
     outline: none;
 
+    -webkit-transition: all 500ms ease 0s;
     -moz-transition: all 500ms ease 0s;
     -o-transition: all 500ms ease 0s;
-    -webkit-transition: all 500ms ease 0s;
-    -ms-transition: all 500ms ease 0s;
     transition: all 500ms ease 0s;
-
 }
 .res-item .col-md-8 a:hover, .res-item .col-md-8 a:active {
-  font-size: 18px;
-  text-decoration: none;
+    font-size: 18px;
+    text-decoration: none;
 }
+/*
+ *   Footer styles
+ */
 footer {
     bottom: 0;
     margin: 0 auto;
     position: fixed;
     width: 100%;
     color: white;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 footer a, footer a:hover, footer a:active {
     color: white;
     text-decoration: none;
 }
+/*
+ *   Left animated menu
+ */
 #legend {
     background-color: #ffffff;
     border-right: 2px dashed #00a8ec;
@@ -197,10 +332,9 @@ footer a, footer a:hover, footer a:active {
     top: 0;
     width: 250px;
 
+    -webkit-transition: left 1s ease 0s;
     -moz-transition: left 1s ease 0s;
     -o-transition: left 1s ease 0s;
-    -webkit-transition: left 1s ease 0s;
-    -ms-transition: left 1s ease 0s;
     transition: left 1s ease 0s;
 }
 #legend:hover, #legend:focus {
@@ -225,13 +359,12 @@ footer a, footer a:hover, footer a:active {
     text-align: left;
     width: 100%;
 
+    -webkit-transition: all 500ms ease 0s;
     -moz-transition: all 500ms ease 0s;
     -o-transition: all 500ms ease 0s;
-    -webkit-transition: all 500ms ease 0s;
-    -ms-transition: all 500ms ease 0s;
     transition: all 500ms ease 0s;
 }
-#legend ul.legend li:not(:last-child){
+#legend ul.legend li:not(:last-child) {
     border-bottom: 1px solid silver;
 }
 .legend li i.fa {
@@ -244,7 +377,6 @@ footer a, footer a:hover, footer a:active {
     color: #FFFFFF;
     cursor: default;
     padding-left: 35px;
-
 }
 .legend-title {
     float: left;
@@ -257,20 +389,32 @@ footer a, footer a:hover, footer a:active {
     font-weight: bold;
 }
 /* MENU ICON ON LEFT NAVIGATION BAR */
-
 .navigation-button {
+    border-bottom-colors: none;
     -moz-border-bottom-colors: none;
+    border-left-colors: none;
     -moz-border-left-colors: none;
+    border-right-colors: none;
     -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-color: #ffffff;
+    border-top-colors: none;
+    -moz-border-top-colors: none;    
+    
     border-bottom-right-radius: 5px;
-    border-color: #00a8ec #00a8ec #00a8ec -moz-use-text-color;
+    border-top-right-radius: 5px;
+    border-color: #00a8ec;
     border-image: none;
     border-style: solid solid solid none;
-    border-top-right-radius: 5px;
+    
     border-width: 1px 1px 1px 0;
-    bottom: 49%;
+
+    background-color: #ffffff;
+
+    bottom: 48%; /** older browsers **/
+    bottom: -webkit-calc(50% - 48px); /** Safari 6, Chrome 19-25 **/
+    bottom: -moz-calc(50% - 48px); /** FF 4-15  **/
+    bottom: calc(50% - 48px); /** FF 16+, IE 9+, Opera 15, Chrome 26+, Safari 7 and future other browsers **/
+
+
     display: block;
     height: 95px;
 
@@ -281,10 +425,9 @@ footer a, footer a:hover, footer a:active {
     position: absolute;
     right: -43px;
 
+    -webkit-transition: all 1s ease 0s;
     -moz-transition: all 1s ease 0s;
     -o-transition: all 1s ease 0s;
-    -webkit-transition: all 1s ease 0s;
-    -ms-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
 }
 .navigation-button > li {
@@ -304,10 +447,12 @@ footer a, footer a:hover, footer a:active {
     text-decoration: none;
     top: -9px;
 
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
     transform: rotate(90deg);
-
+    
     width: 100% !important;
 }
 .navigation-button:hover, .navigation-button:focus {

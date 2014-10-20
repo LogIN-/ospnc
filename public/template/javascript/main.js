@@ -29,7 +29,7 @@ ospnc.registerUser = function() {
 };
 ospnc.setupSocketEvents = function() {
     socket.on('welcome', function(data) {
-        client.guid = data.guid;
+        client.guid = escape(data.guid);
         console.log("User " + client.guid + " is registered!");
     });
 
@@ -52,7 +52,7 @@ ospnc.setupSocketEvents = function() {
         }
         if(!$('.res-title').length){
             var resContainer = $("section.container div.results_body");
-            resContainer.append('<div class="res-item res-title col-sm-12 animated flipInX"><div class="res-title res-title-head">Results for:</div> <div class="res-title res-title-query">'+ data.clientSearch +'</div></div>');
+            resContainer.append('<div class="res-item res-title col-sm-12 animated flipInX"><div class="res-title res-title-head">Results for:</div> <div class="res-title res-title-query">'+ escape(data.clientSearch) +'</div></div>');
         }
         ospnc.addResult(resJson, resHuman);     
 
@@ -81,11 +81,11 @@ ospnc.showAlertWindow = function() {
 };
 ospnc.addResult = function(data, resHuman) {
     var resContainer = $("section.container div.results_body");
-    var resId = 'item-' + data.name.toLowerCase();    
+    var resId = 'item-' + escape(data.name).toLowerCase();    
 
     var resTemplate = '<div title="' + resHuman.title + '" id="' + resId + '" class="res-item col-sm-12 animated lightSpeedIn">' +
-                      '    <div class="col-md-4"><span>' + data.name + '</span></div>' +
-                      '    <div class="col-md-8"><i class="fa ' + resHuman.icon + '"></i><a target="_blank" title="Visit URL on checked page" href="' + data.headers.reqHost + data.headers.reqPath + '">^</a></div>' +
+                      '    <div class="col-md-4"><span>' + escape(data.name) + '</span></div>' +
+                      '    <div class="col-md-8"><i class="fa ' + resHuman.icon + '"></i><a target="_blank" title="Visit URL on checked page" href="' + escape(data.headers.reqHost) + escape(data.headers.reqPath) + '">^</a></div>' +
                       '</div>';
     resContainer.append(resTemplate);
 };
@@ -105,7 +105,7 @@ $(document).ready(function() {
         if (e.target === inputSearch[0]) {
 
             var searchObj = {
-                searchValue: inputSearch.val()
+                searchValue: inputSearch.val().replace(/\s+/g, '-').toLowerCase()
             };
             if (searchObj.searchValue.length < 3) {
                 ospnc.showAlertWindow();
