@@ -4,7 +4,17 @@ project name is already taken on some of most popular open-source communities.
 
 ## Get started
 You can just visit this page: [ospnc](http://ivantomic.com/projects/ospnc/)
-or you can clone this repo install deps and start service on your own domain
+or you can [fork](https://github.com/LogIN-/ospnc/fork) this repo install deps and start service on your own domain
+
+Supported sources |
+--- |
+![PyPI](http://ivantomic.com/projects/ospnc/template/images/favicons/pypi_16x16.png "PyPI") `PyPI` |
+![Google Code](http://ivantomic.com/projects/ospnc/template/images/favicons/google-code_16x16.png "Google Code") `Google Code` |
+![npmjs](http://ivantomic.com/projects/ospnc/template/images/favicons/npmjs_16x16.png "npmjs") `npmjs` |
+![GitHub](http://ivantomic.com/projects/ospnc/template/images/favicons/github_16x16.png "GitHub") `GitHub` |
+![RubyGems](http://ivantomic.com/projects/ospnc/template/images/favicons/rubygems_16x16.png "RubyGems") `RubyGems` |
+![SourceForge](http://ivantomic.com/projects/ospnc/template/images/favicons/sourceforge_16x16.png "SourceForge") `SourceForge` |
+![CodePlex](http://ivantomic.com/projects/ospnc/template/images/favicons/codeplex_16x16.png "CodePlex") `CodePlex` |
 
 
 ## Support and Bugs

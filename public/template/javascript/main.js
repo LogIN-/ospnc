@@ -34,10 +34,12 @@ ospnc.setupSocketEvents = function() {
     });
 
     socket.on('console_output', function(data) {     
-        var resJson = data.data;        
+        var resJson = data.data; 
+
         var resHuman = {
             icon: null,
-            title: null
+            title: null,
+            favicon: 'template/images/favicons/' + resJson.namesafe + "_16x16.png"
         }
 
         if(resJson.status === 'available'){
@@ -80,12 +82,12 @@ ospnc.showAlertWindow = function() {
         });
 };
 ospnc.addResult = function(data, resHuman) {
-    var resContainer = $("section.container div.results_body");
-    var resId = 'item-' + escape(data.name).toLowerCase();    
+    var resContainer = $("section .results_body");
+    var resId = 'item-' + data.namesafe;    
 
     var resTemplate = '<div title="' + resHuman.title + '" id="' + resId + '" class="res-item col-sm-12 animated lightSpeedIn">' +
-                      '    <div class="col-md-4"><span>' + escape(data.name) + '</span></div>' +
-                      '    <div class="col-md-8"><i class="fa ' + resHuman.icon + '"></i><a target="_blank" title="Visit URL on checked page" href="' + escape(data.headers.reqHost) + escape(data.headers.reqPath) + '">^</a></div>' +
+                      '    <div class="col-md-4"><img width="16" height="16" alt="' + data.name + '" src="' + resHuman.favicon + '" /><span>' + data.name + '</span></div>' +
+                      '    <div class="col-md-8"><i class="fa ' + resHuman.icon + '"></i><a target="_blank" title="Visit URL on checked page" href="' + data.headers.reqHost + escape(data.headers.reqPath) + '">^</a></div>' +
                       '</div>';
     resContainer.append(resTemplate);
 };

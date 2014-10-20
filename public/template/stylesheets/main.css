@@ -2,7 +2,7 @@
 * @Author: login
 * @Date:   2014-10-05 12:59:05
 * @Last Modified by:   login
-* @Last Modified time: 2014-10-20 10:22:15
+* @Last Modified time: 2014-10-20 10:57:29
 */
 
 /*
@@ -236,6 +236,12 @@ section.container {
     height: 35px;
     vertical-align: middle;
     cursor: default;
+}
+.col-md-4 > img {
+    float: left;
+    height: 16px;
+    margin-top: 9px;
+    width: 16px;
 }
 /*
  *   Results head title
