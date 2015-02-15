@@ -1,18 +1,9 @@
 // Setup basic express and socket.io server
 var server = {};
-
 server.express = require('express');
-server.mainApp = server.express();
-server.mainApp.use(function(req, res, next) {
-        res.header("Access-Control-Allow-Origin", "*");
-        res.header("Access-Control-Allow-Headers", "X-Requested-With");
-        res.header("Access-Control-Allow-Headers", "Content-Type");
-        res.header("Access-Control-Allow-Methods", "PUT, GET, POST, DELETE, OPTIONS");
-        next();
-    });
-
-server.mainServer = require('http').createServer(server.mainApp);
-server.io = require('socket.io')(server.mainServer);
+server.mainApp = server.express(),
+    server.mainServer = require('http').createServer(server.mainApp),
+    server.io = require('socket.io')(server.mainServer);
 
 // Some configs and handlers
 var config = {
