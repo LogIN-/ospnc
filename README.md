@@ -15,6 +15,8 @@ Supported sources |
 ![RubyGems](http://ivantomic.com/projects/ospnc/template/images/favicons/rubygems_16x16.png "RubyGems") `RubyGems` |
 ![SourceForge](http://ivantomic.com/projects/ospnc/template/images/favicons/sourceforge_16x16.png "SourceForge") `SourceForge` |
 ![CodePlex](http://ivantomic.com/projects/ospnc/template/images/favicons/codeplex_16x16.png "CodePlex") `CodePlex` |
+![debian](http://ivantomic.com/projects/ospnc/template/images/favicons/debian_16x16.png "debian") `debian` |
+![bitbucket](http://ivantomic.com/projects/ospnc/template/images/favicons/bitbucket_16x16.png "bitbucket") `bitbucket` |
 
 
 ## Support and Bugs

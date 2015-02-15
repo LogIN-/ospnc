@@ -87,7 +87,7 @@ ospnc.addResult = function(data, resHuman) {
 
     var resTemplate = '<div title="' + resHuman.title + '" id="' + resId + '" class="res-item col-sm-12 animated lightSpeedIn">' +
                       '    <div class="col-md-4"><img width="16" height="16" alt="' + data.name + '" src="' + resHuman.favicon + '" /><span>' + data.name + '</span></div>' +
-                      '    <div class="col-md-8"><i class="fa ' + resHuman.icon + '"></i><a target="_blank" title="Visit URL on checked page" href="' + data.headers.reqHost + escape(data.headers.reqPath) + '">^</a></div>' +
+                      '    <div class="col-md-8"><i class="fa ' + resHuman.icon + '"></i><a target="_blank" title="Visit URL on checked page" href="' + data.headers.reqHost + data.headers.reqPath + '">^</a></div>' +
                       '</div>';
     resContainer.append(resTemplate);
 };
