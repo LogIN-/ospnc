@@ -26,6 +26,7 @@
   "homepage": "https://github.com/LogIN-/open-source-name-checker",
   "dependencies": {
     "express": "^4.9.5",
+    "request": "^2.53.0",
     "socket.io": "^1.1.0",
     "underscore": "^1.7.0"
   },

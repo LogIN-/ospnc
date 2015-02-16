@@ -24,6 +24,8 @@ server.mainServer.listen(config.port, function() {
     console.log('Server listening at port %d', config.port);
 });
 
+server.io.set('origins', '*:*');
+
 // Routing for static fronted files
 server.mainApp.use(server.express.static(__dirname + '/public'));
 

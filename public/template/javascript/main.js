@@ -1,4 +1,5 @@
 var socket = io.connect('http://ivantomic.com:8089');
+
 var client = {
     guid: null,
     searches: [],
