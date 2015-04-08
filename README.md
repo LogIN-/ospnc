@@ -10,15 +10,15 @@ project name is already taken on some of most popular open-source communities.
 
 Supported sources |
 --- |
-![PyPI](https://raw.githubusercontent.com/juanbrujo/ospnc/master/public/template/images/favicons/pypi_16x16.png "PyPI") `PyPI` |
-![Google Code](https://raw.githubusercontent.com/juanbrujo/ospnc/master/public/template/images/favicons/google-code_16x16.png "Google Code") `Google Code` |
-![npmjs](https://raw.githubusercontent.com/juanbrujo/ospnc/master/public/template/images/favicons/npmjs_16x16.png "npmjs") `npmjs` |
-![GitHub](https://raw.githubusercontent.com/juanbrujo/ospnc/master/public/template/images/favicons/github_16x16.png "GitHub") `GitHub` |
-![RubyGems](https://raw.githubusercontent.com/juanbrujo/ospnc/master/public/template/images/favicons/rubygems_16x16.png "RubyGems") `RubyGems` |
-![SourceForge](https://raw.githubusercontent.com/juanbrujo/ospnc/master/public/template/images/favicons/sourceforge_16x16.png "SourceForge") `SourceForge` |
-![CodePlex](https://raw.githubusercontent.com/juanbrujo/ospnc/master/public/template/images/favicons/codeplex_16x16.png "CodePlex") `CodePlex` |
-![debian](https://raw.githubusercontent.com/juanbrujo/ospnc/master/public/template/images/favicons/debian_16x16.png "debian") `debian` |
-![bitbucket](https://raw.githubusercontent.com/juanbrujo/ospnc/master/public/template/images/favicons/bitbucket_16x16.png "bitbucket") `bitbucket` |
+![PyPI](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/pypi_16x16.png "PyPI") `PyPI` |
+![Google Code](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/google-code_16x16.png "Google Code") `Google Code` |
+![npmjs](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/npmjs_16x16.png "npmjs") `npmjs` |
+![GitHub](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/github_16x16.png "GitHub") `GitHub` |
+![RubyGems](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/rubygems_16x16.png "RubyGems") `RubyGems` |
+![SourceForge](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/sourceforge_16x16.png "SourceForge") `SourceForge` |
+![CodePlex](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/codeplex_16x16.png "CodePlex") `CodePlex` |
+![debian](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/debian_16x16.png "debian") `debian` |
+![bitbucket](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/bitbucket_16x16.png "bitbucket") `bitbucket` |
 
 
 ## Support and Bugs
