@@ -1,4 +1,4 @@
-var socket = io.connect('http://ivantomic.com:8089');
+var socket = io.connect('http://localhost:8089');
 
 var client = {
     guid: null,
@@ -131,6 +131,7 @@ $(document).ready(function() {
     $("#legend").css('left', '-248px');
 });
 
+/* Only for production
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -140,3 +141,4 @@ ga('create', 'UA-38013109-1', 'auto');
 ga('require', 'displayfeatures');
 ga('require', 'linkid', 'linkid.js');
 ga('send', 'pageview');
+*/
