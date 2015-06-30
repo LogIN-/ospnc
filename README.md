@@ -6,7 +6,7 @@ project name is already taken on some of most popular open-source communities.
 1. [Fork](https://github.com/LogIN-/ospnc/fork) / [Download](https://github.com/LogIN-/ospnc/archive/master.zip) this repo to your `localhost`.
 2. `$ npm install` to install node.js packages and dependencies.
 3. `$ node index.js` to start the server (default to port 8089).
-4. Point your browser to `/public` directory.
+4. Point your browser to the `/public` directory or [http://localhost:8089/](http://localhost:8089/).
 
 Supported sources |
 --- |
