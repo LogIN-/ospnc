@@ -8,6 +8,13 @@ project name is already taken on some of most popular open-source communities.
 3. `$ node index.js` to start the server (default to port 8089).
 4. Point your browser to the `/public` directory or [http://localhost:8089/](http://localhost:8089/).
 
+### Running in Docker
+1. Fork or download as before.
+2. `$ docker build -t ospnc .` to build the docker image.
+3. `$ docker create -p 8089:8089 --name ospnc ospnc` to create the container with default port of 8089.
+4. `$ docker start ospnc` to start the container.
+4. Point your browser to [http://localhost:8089/](http://localhost:8089/).
+
 Supported sources |
 --- |
 ![PyPI](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/pypi_16x16.png "PyPI") `PyPI` |
