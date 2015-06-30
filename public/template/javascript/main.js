@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:8089');
+var socket = io.connect();
 
 var client = {
     guid: null,
