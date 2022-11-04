@@ -23,7 +23,6 @@ Supported sources |
 ![GitHub](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/github_16x16.png "GitHub") `GitHub` |
 ![RubyGems](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/rubygems_16x16.png "RubyGems") `RubyGems` |
 ![SourceForge](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/sourceforge_16x16.png "SourceForge") `SourceForge` |
-![CodePlex](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/codeplex_16x16.png "CodePlex") `CodePlex` |
 ![debian](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/debian_16x16.png "debian") `debian` |
 ![bitbucket](https://raw.githubusercontent.com/LogIN-/ospnc/master/public/template/images/favicons/bitbucket_16x16.png "bitbucket") `bitbucket` |
 
